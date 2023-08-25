@@ -1,11 +1,13 @@
 module.exports = {
-  source: 'src',
   collections_config: {
     blog: {
-      path: 'content/blog',
+      path: 'src/content/blog',
       output: true,
-      url: '/blog/[slug].html',
+      url: '/blog/[slug]/',
       icon: 'article',
+      preview: {
+        image: 'heroImage',
+      },
     },
   },
 }
