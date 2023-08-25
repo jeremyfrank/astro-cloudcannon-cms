@@ -58,18 +58,14 @@ const { title, description, pubDate, content_blocks } = Astro.props
   <body>
     <Header />
     <main>
-      <article>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
-              <FormattedDate date={pubDate} />
-            </div>
-            <h1>{title}</h1>
-            <hr />
-          </div>
-          <PageBuilder bookshop:live contentBlocks={content_blocks} />
+      <div class="title">
+        <div class="date">
+          <FormattedDate date={pubDate} />
         </div>
-      </article>
+        <h1>{title}</h1>
+        <hr />
+      </div>
+      <PageBuilder bookshop:live contentBlocks={content_blocks} />
     </main>
     <Footer />
   </body>
