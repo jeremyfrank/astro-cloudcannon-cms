@@ -25,6 +25,7 @@ module.exports = {
       preview: {
         image: 'heroImage',
       },
+      _enabled_editors: ['content', 'visual'],
     },
   },
 }
