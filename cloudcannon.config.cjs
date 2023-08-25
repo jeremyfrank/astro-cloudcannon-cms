@@ -17,5 +17,14 @@ module.exports = {
         key: 'pubDate',
       },
     },
+    pages: {
+      path: 'src/content/pages',
+      output: true,
+      url: '/[slug]/',
+      icon: 'description',
+      preview: {
+        image: 'heroImage',
+      },
+    },
   },
 }
