@@ -8,12 +8,12 @@ content_blocks:
     description: The hero description here
     image: /images/blog-placeholder-3.jpg
     image_alt: Image alt text
-  - _bookshop_name: text-media
+  - _bookshop_name: text_media
     text: '<p>Text + Media - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.</p>'
     image: /images/blog-placeholder-3.jpg
     image_alt: Image alt text
     reversed: false
-  - _bookshop_name: text-media
+  - _bookshop_name: text_media
     text: '<p>Text + Media (reversed) - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum.</p>'
     image: /images/blog-placeholder-3.jpg
     image_alt: Image alt text
