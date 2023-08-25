@@ -23,6 +23,7 @@ const pages = defineCollection({
       .string()
       .or(z.date())
       .transform((val) => new Date(val)),
+    content_blocks: z.array(z.any()).optional(), // temporarily use .any()
   }),
 })
 
