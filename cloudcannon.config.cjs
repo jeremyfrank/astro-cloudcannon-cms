@@ -13,6 +13,9 @@ module.exports = {
       preview: {
         image: 'heroImage',
       },
+      sort: {
+        key: 'pubDate',
+      },
     },
   },
 }
