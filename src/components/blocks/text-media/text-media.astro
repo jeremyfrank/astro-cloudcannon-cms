@@ -1,0 +1,13 @@
+---
+const { text, image, image_alt, reversed } = Astro.props
+---
+
+<div class="grid grid-cols-2 gap-10">
+  <div class="self-center">
+    <div class="prose">
+      <Fragment set:html={text} />
+    </div>
+  </div>
+
+  <img src={image} alt={image_alt} class:list={{ 'order-first': reversed }} />
+</div>
