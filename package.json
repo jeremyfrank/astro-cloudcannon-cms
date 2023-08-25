@@ -14,5 +14,11 @@
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.2",
     "astro": "^2.10.12"
+  },
+  "devDependencies": {
+    "@bookshop/astro-bookshop": "3.6.5",
+    "@bookshop/astro-engine": "3.6.5",
+    "@bookshop/browser": "3.6.5",
+    "@bookshop/generate": "3.6.5"
   }
 }
