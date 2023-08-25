@@ -2,8 +2,14 @@
 const { title, description, image, image_alt } = Astro.props
 ---
 
-<div>
-  <p>{title}</p>
+<div
+  class="relative text-white text-center grid place-content-center aspect-video"
+>
+  <h2 class="font-bold text-6xl">{title}</h2>
   <p>{description}</p>
-  <img src={image} alt={image_alt} />
+  <img
+    src={image}
+    class="absolute inset-0 -z-10 object-cover w-full"
+    alt={image_alt}
+  />
 </div>
