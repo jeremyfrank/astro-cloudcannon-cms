@@ -14,11 +14,11 @@ Object.entries(componentImports).forEach(([path, obj]) => {
 })
 ---
 
-<Fragment>
+<div class="space-y-10">
   {
     contentBlocks?.map((block) => {
       const Component = components[block._bookshop_name]
       return <Component {...block} />
     })
   }
-</Fragment>
+</div>
