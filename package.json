@@ -13,7 +13,9 @@
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.2",
-    "astro": "^2.10.12"
+    "@astrojs/tailwind": "^4.0.0",
+    "astro": "^2.10.12",
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@bookshop/astro-bookshop": "3.6.5",
