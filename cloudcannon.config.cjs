@@ -1,4 +1,9 @@
 module.exports = {
+  paths: {
+    data: 'src/data',
+    static: 'public',
+    uploads: 'public/uploads',
+  },
   collections_config: {
     blog: {
       path: 'src/content/blog',
