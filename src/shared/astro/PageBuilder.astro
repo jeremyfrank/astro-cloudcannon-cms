@@ -1,11 +1,11 @@
 ---
 const { contentBlocks } = Astro.props
 const components = {}
-const componentImports = import.meta.glob('./blocks/**/*.astro', {
+const componentImports = import.meta.glob('../../components/**/*.astro', {
   eager: true,
 })
 Object.entries(componentImports).forEach(([path, obj]) => {
-  const parts = path.replace('./blocks/', '').split('.')[0].split('/')
+  const parts = path.replace('../../components/', '').split('.')[0].split('/')
   if (parts[parts.length - 1] === parts[parts.length - 2]) {
     parts.pop()
   }
