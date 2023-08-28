@@ -13,4 +13,9 @@ content_blocks:
     image: /images/blog-placeholder-4.jpg
     image_alt:
     reversed: false
+  - _bookshop_name: blocks/text_media
+    text: <p>Another test block added from cloudcannon.</p>
+    image: /images/blog-placeholder-5.jpg
+    image_alt:
+    reversed: true
 ---
