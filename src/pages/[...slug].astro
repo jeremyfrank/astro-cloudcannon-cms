@@ -1,20 +1,19 @@
 ---
-import { CollectionEntry, getCollection } from 'astro:content'
+import { getCollection } from 'astro:content'
 import PageLayout from '../layouts/PageLayout.astro'
 
 export async function getStaticPaths() {
-  const posts = await getCollection('pages')
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { ...post, frontmatter: post.data },
-  }))
+  const pages = await getCollection('pages')
+  return pages.map((page) => {
+    const slug = page.slug
+    return {
+      params: { slug },
+      props: { page },
+    }
+  })
 }
-type Props = CollectionEntry<'pages'>
 
-const post = Astro.props
-const { Content } = await post.render()
+const page = Astro.props.page
 ---
 
-<PageLayout {...post.data}>
-  <Content />
-</PageLayout>
+<PageLayout frontmatter={page.data} />
