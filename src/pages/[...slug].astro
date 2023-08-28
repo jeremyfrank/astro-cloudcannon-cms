@@ -6,7 +6,7 @@ export async function getStaticPaths() {
   const posts = await getCollection('pages')
   return posts.map((post) => ({
     params: { slug: post.slug },
-    props: post,
+    props: { ...post, frontmatter: post.data },
   }))
 }
 type Props = CollectionEntry<'pages'>
