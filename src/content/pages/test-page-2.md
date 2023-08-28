@@ -8,4 +8,9 @@ content_blocks:
     description: Description
     image: /images/blog-placeholder-5.jpg
     image_alt: Test
+  - _bookshop_name: blocks/text_media
+    text: <p>This is a test block added from cloudcannon.</p>
+    image: /images/blog-placeholder-4.jpg
+    image_alt:
+    reversed: false
 ---
